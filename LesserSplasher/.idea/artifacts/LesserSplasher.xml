@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LesserSplasher">
+    <output-path>$PROJECT_DIR$/../../../../RSPeer/scripts</output-path>
+    <root id="archive" name="LesserSplasher.jar">
+      <element id="module-output" name="LesserSplasher" />
+    </root>
+  </artifact>
+</component>
