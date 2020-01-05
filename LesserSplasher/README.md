@@ -1,4 +1,5 @@
 # Lesser demon splasher
+A bot which splashes the lesser demon in the wizard's tower
 
 ## How to start?
 - Start in the wizard's tower with mind runes and an elemental staff
