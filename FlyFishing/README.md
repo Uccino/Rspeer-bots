@@ -1,3 +1,8 @@
 # Flyfishing bot by Uccino
+A flyfishing bot which banks the fish
 
-Start in edgeville or barbarian village with both a fly fishing rod and feathers in your inventory and run the bot. 
+## How to start?
+- Walk to edgeville or barbarian village
+- Have enough feathers and a flyfishing rod in your inventory
+- Start the script
+- Profit?
