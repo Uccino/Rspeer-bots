@@ -6,6 +6,7 @@ import org.rspeer.runetek.api.commons.math.Random;
 import org.rspeer.runetek.api.scene.Npcs;
 import org.rspeer.script.task.Task;
 import org.rspeer.script.task.TaskScript;
+import org.rspeer.ui.Log;
 
 public class RandomEventTask extends Task {
     @Override
@@ -16,6 +17,7 @@ public class RandomEventTask extends Task {
 
     @Override
     public int execute() {
+        Log.fine("Random event!");
         Npc randomNpc = Npcs.getNearest(npc -> npc.containsAction("Dismiss"));
         Time.sleep(Random.nextInt(1000,5000));
         randomNpc.interact("Dismiss");

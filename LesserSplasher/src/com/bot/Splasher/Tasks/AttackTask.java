@@ -10,7 +10,13 @@ import org.rspeer.ui.Log;
 public class AttackTask extends Task {
     @Override
     public boolean validate() {
-        return Npcs.getNearest(npc->npc.getName().equals("Lesser demon")) != null;
+        boolean isDemonPresent = Npcs.getNearest(npc->npc.getName().equals("Lesser demon")) != null;
+        boolean hasTarget =  Players.getLocal().getTarget() != null;
+
+        Log.fine("Has target: " + hasTarget );
+        Log.fine("Is demon present: " + isDemonPresent );
+
+        return isDemonPresent && !hasTarget;
     }
 
     @Override
@@ -18,8 +24,6 @@ public class AttackTask extends Task {
         Log.fine("Attacking!");
         Npc demon = Npcs.getNearest(npc->npc.getName().equals("Lesser demon"));
         demon.interact("Attack");
-        Time.sleepWhile(()->Players.getLocal().getTarget() != null, 30000);
-
         return 0;
     }
 }

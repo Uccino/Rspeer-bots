@@ -18,7 +18,7 @@ public class IdleTask extends Task {
     @Override
     public int execute() {
         Log.fine("Idleing");
-        Time.sleepUntil(()->Npcs.getNearest(npc -> npc.containsAction("Attack")) != null, 5000);
+        Time.sleepUntil(()->Npcs.getNearest(npc -> npc.containsAction("Attack")) != null || !Players.getLocal().isAnimating(), 5000);
         return 0;
     }
 }

@@ -9,7 +9,7 @@ import org.rspeer.script.ScriptMeta;
 import org.rspeer.script.task.Task;
 import org.rspeer.ui.Log;
 
-@ScriptMeta(name = "Lesser demon splasher", desc = "Splashes at the lesser demon at the wizard's tower", developer = "TheDuck", version = 1.0)
+@ScriptMeta(name = "Lesser demon splasher", desc = "Splashes at the lesser demon at the wizard's tower", developer = "Uccino aka TheDuck", version = 1.0)
 public class Main extends Script {
 
     Task[] Tasks = {
